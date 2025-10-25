@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Doc Verifier</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI Document Verifier</h1>
+      <p>Drag & drop your document or click to select it for verification.</p>
+
+      <div id="drop-area" class="upload-card">
+        <input type="file" id="docInput" accept=".pdf,.jpg,.png" />
+        <p>Drag & drop your file here or click to select</p>
+        <div id="preview"></div>
+        <button id="uploadBtn">Verify Document</button>
+      </div>
+
+      <div id="loader" class="loader hidden"></div>
+      <div id="result" class="result"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
